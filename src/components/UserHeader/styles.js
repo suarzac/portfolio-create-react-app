@@ -20,6 +20,7 @@ export const Header = styled.div`
 
 export const Image = styled.img`
   width: 200px;
+  height: 300px;
   margin-right: 1rem;
   border-radius: 2px;
 `;
@@ -31,16 +32,19 @@ export const ViewResumeLink = styled.a`
   font-weight: bold;
   align-items: center;
   margin-top: 1rem;
-  border: 2px solid #2ecc40;
-  background-color: rgba(46, 204, 64, 0.3);
+  border: 2px solid #ABCDEF;
+  background-color: rgba(102, 141, 201, .3);
   transition: background-color 250ms ease;
 
   &:hover {
-    background-color: #2ecc40;
+    background-color: #ABCDEF;
   }
 
   svg {
     fill: white;
     margin-left: 8px;
+  }
+  @media (max-width: 640px) {
+    flex-direction: column;
   }
 `;
